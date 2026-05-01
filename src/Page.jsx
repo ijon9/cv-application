@@ -3,6 +3,9 @@ import { useState } from 'react'
 import Email from './Email.jsx'
 import Education from './Education.jsx'
 import Work from './Work.jsx'
+import EmailOutput from './EmailOutput.jsx'
+import EducationOutput from './EducationOutput.jsx'
+import WorkOutput from './WorkOutput.jsx'
 
 function Page() {
     const [email, setEmail] = useState({
@@ -34,9 +37,9 @@ function Page() {
 
     const divStyle2 = {
         display: "grid",
-        gridTemplateRows: "1fr 1fr 1fr",
+        gridTemplateRows: "150px 150px 1fr",
         border: "1px solid black",
-        height: "500px",
+        // height: "500px",
         margin: "10px"
     }
 
@@ -50,26 +53,10 @@ function Page() {
         </div>
         <h1 style={{textAlign: "center"}}> Output </h1>
         <div style={divStyle2}>
-            
+            <EmailOutput info={email} />
+            <EducationOutput info={education}/>
+            <WorkOutput info={work} />
         </div>
-        {/* <div>
-            {email.name}<br></br>
-            {email.email}<br></br>
-            {email.phone}
-        </div><br></br>
-        <div>
-            {education.school}<br></br>
-            {education.major}<br></br>
-            {education.start}<br></br>
-            {education.end}<br></br>
-        </div><br></br>
-        <div>
-            {work.company}<br></br>
-            {work.position}<br></br>
-            {work.responsibilities}<br></br>
-            {work.start}<br></br>
-            {work.end}<br></br>
-        </div> */}
         </>
     )
 }

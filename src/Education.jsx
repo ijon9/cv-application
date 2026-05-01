@@ -13,6 +13,7 @@ function Education({ onEducationChange }) {
     return (
         <>
         <div style={divStyle}>
+            <h2>Education</h2>
             <label for="schoolName">School Name:</label>
             <input id="schoolName"></input><br></br>
             <label for="major">Major:</label>

@@ -15,6 +15,7 @@ function Work({ onWorkChange }) {
     return (
         <>
         <div style={divStyle}>
+            <h2>Work Experience</h2>
             <label for="companyName">Company Name:</label>
             <input id="companyName"></input><br></br>
             <label for="positionTitle">Position Title:</label>

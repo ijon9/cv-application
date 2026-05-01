@@ -13,6 +13,7 @@ function Email({ onEmailChange }) {
     return (
         <>
         <div style={divStyle}>
+            <h2>General Info</h2>
             <label for="name">Name:</label>
             <input id="name"></input><br></br>
             <label for="email">Email:</label>
